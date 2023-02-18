@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: glossy-attic-375106
+    schema: dbt_test
+    
+    tables:
+      - name: fhv_tripdata
