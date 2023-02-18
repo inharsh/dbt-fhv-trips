@@ -1,61 +1,134 @@
 
 
-============================== 2023-02-18 04:39:47.330218 | d588d59c-119a-452a-8442-a44b8c201db2 ==============================
-[0m04:39:47.330218 [info ] [MainThread]: Running with dbt=1.4.1
-[0m04:39:47.331561 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'fhv_trips_dbt', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
-[0m04:39:47.332216 [debug] [MainThread]: Tracking: tracking
-[0m04:39:47.343888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D54999A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D5499550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D54995B0>]}
-[0m04:39:47.354575 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Harshit\.dbt
-[0m04:39:47.356524 [debug] [MainThread]: Starter project path: C:\Users\Harshit\anaconda3\envs\dbt\lib\site-packages\dbt\include\starter_project
-[0m04:48:29.763458 [info ] [MainThread]: Profile fhv_trips_dbt written to C:\Users\Harshit\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
-[0m04:48:29.764460 [info ] [MainThread]: 
-Your new dbt project "fhv_trips_dbt" was created!
-
-For more information on how to configure the profiles.yml file,
-please consult the dbt documentation here:
-
-  https://docs.getdbt.com/docs/configure-your-profile
-
-One more thing:
-
-Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
-
-  https://community.getdbt.com/
-
-Happy modeling!
-
-[0m04:48:29.765459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D5D2F6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D60A5FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C9D60A5F10>]}
-[0m04:48:29.765459 [debug] [MainThread]: Flushing usage events
+============================== 2023-02-18 05:03:01.668035 | 04091d27-4a72-44f6-ae98-0aba5cd55624 ==============================
+[0m05:03:01.668035 [info ] [MainThread]: Running with dbt=1.4.1
+[0m05:03:01.670095 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m05:03:01.671202 [debug] [MainThread]: Tracking: tracking
+[0m05:03:01.690032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFF51165E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFF5130F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFF5130A60>]}
+[0m05:03:02.179937 [debug] [MainThread]: Executing "git --help"
+[0m05:03:02.204941 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:03:02.206154 [debug] [MainThread]: STDERR: "b''"
+[0m05:03:02.209937 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:03:02.210934 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:03:02.212937 [debug] [MainThread]: On debug: select 1 as id
+[0m05:03:04.495213 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:37eb7fe1-56a4-4829-b634-b7261a1d123c&page=queryresults
+[0m05:03:04.496215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFF5D59DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFF50BBA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CFEEAE8BB0>]}
+[0m05:03:04.497227 [debug] [MainThread]: Flushing usage events
+[0m05:03:05.722530 [debug] [MainThread]: Connection 'debug' was properly closed.
 
 
-============================== 2023-02-18 05:01:46.202926 | 0ae7f8b4-34b4-4e46-9850-3a60a5607e04 ==============================
-[0m05:01:46.202926 [info ] [MainThread]: Running with dbt=1.4.1
-[0m05:01:46.205388 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
-[0m05:01:46.205927 [debug] [MainThread]: Tracking: tracking
-[0m05:01:46.220927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE407D66A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE407F2EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE407F2B50>]}
-[0m05:01:46.635897 [debug] [MainThread]: Executing "git --help"
-[0m05:01:46.675080 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m05:01:46.675977 [debug] [MainThread]: STDERR: "b''"
-[0m05:01:46.681978 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
-[0m05:01:46.681978 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m05:01:46.682978 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: '/c/Users/Harshit/.gc/glossy-attic-dbt-service.json''
-[0m05:01:46.688033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE41051430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE413CBFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE414177C0>]}
-[0m05:01:46.689181 [debug] [MainThread]: Flushing usage events
-[0m05:01:47.934196 [debug] [MainThread]: Connection 'debug' was properly closed.
+============================== 2023-02-18 05:07:51.922510 | 97822e78-956a-4b49-ab38-7246b4dfcf06 ==============================
+[0m05:07:51.922510 [info ] [MainThread]: Running with dbt=1.4.1
+[0m05:07:51.924508 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:07:51.924508 [debug] [MainThread]: Tracking: tracking
+[0m05:07:51.938509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B88C96580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B88C3B940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B82668910>]}
+[0m05:07:51.951797 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:07:51.952508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B898B8CA0>]}
+[0m05:07:52.662177 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m05:07:52.674095 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m05:07:52.741865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A88FD0>]}
+[0m05:07:52.749864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A8E1C0>]}
+[0m05:07:52.750864 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m05:07:52.750864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B899E48E0>]}
+[0m05:07:52.752869 [info ] [MainThread]: 
+[0m05:07:52.753865 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:07:52.756865 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m05:07:52.757867 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:07:55.170977 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m05:07:55.170977 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:07:56.238753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A8EB50>]}
+[0m05:07:56.239754 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:07:56.240755 [info ] [MainThread]: 
+[0m05:07:56.248383 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.my_first_dbt_model
+[0m05:07:56.248908 [info ] [Thread-1  ]: 1 of 2 START sql table model dbt_hsingh.my_first_dbt_model ..................... [RUN]
+[0m05:07:56.249753 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.my_first_dbt_model'
+[0m05:07:56.250754 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.my_first_dbt_model
+[0m05:07:56.254847 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.my_first_dbt_model"
+[0m05:07:56.256754 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.my_first_dbt_model (compile): 2023-02-18 05:07:56.250754 => 2023-02-18 05:07:56.256754
+[0m05:07:56.257755 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.my_first_dbt_model
+[0m05:07:56.301752 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.my_first_dbt_model"
+[0m05:07:56.304841 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m05:07:56.307754 [debug] [Thread-1  ]: On model.fhv_trips_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
 
 
-============================== 2023-02-18 05:02:04.246707 | ba303677-bb02-4e4a-8758-d3c10e9f02fc ==============================
-[0m05:02:04.246707 [info ] [MainThread]: Running with dbt=1.4.1
-[0m05:02:04.248713 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
-[0m05:02:04.248713 [debug] [MainThread]: Tracking: tracking
-[0m05:02:04.262707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222E2919280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222E2932EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222E29329D0>]}
-[0m05:02:04.671509 [debug] [MainThread]: Executing "git --help"
-[0m05:02:04.701524 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m05:02:04.702659 [debug] [MainThread]: STDERR: "b''"
-[0m05:02:04.709444 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
-[0m05:02:04.710446 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m05:02:04.713446 [debug] [MainThread]: On debug: select 1 as id
-[0m05:02:07.163384 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:19c68380-b920-4f4b-ab26-d8d916dcb4ca&page=queryresults
-[0m05:02:07.165397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222E29409D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222DE995430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222E3248850>]}
-[0m05:02:07.165397 [debug] [MainThread]: Flushing usage events
-[0m05:02:08.422932 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m05:08:00.027157 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:b0da1e98-56b6-45c5-8c27-342c15b48b7b&page=queryresults
+[0m05:08:00.045157 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.my_first_dbt_model (execute): 2023-02-18 05:07:56.258385 => 2023-02-18 05:08:00.045157
+[0m05:08:00.046435 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89B9DEE0>]}
+[0m05:08:00.047158 [info ] [Thread-1  ]: 1 of 2 OK created sql table model dbt_hsingh.my_first_dbt_model ................ [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 3.80s]
+[0m05:08:00.050160 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.my_first_dbt_model
+[0m05:08:00.051158 [debug] [Thread-3  ]: Began running node model.fhv_trips_dbt.my_second_dbt_model
+[0m05:08:00.052160 [info ] [Thread-3  ]: 2 of 2 START sql view model dbt_hsingh.my_second_dbt_model ..................... [RUN]
+[0m05:08:00.053160 [debug] [Thread-3  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.my_second_dbt_model'
+[0m05:08:00.053160 [debug] [Thread-3  ]: Began compiling node model.fhv_trips_dbt.my_second_dbt_model
+[0m05:08:00.058159 [debug] [Thread-3  ]: Writing injected SQL for node "model.fhv_trips_dbt.my_second_dbt_model"
+[0m05:08:00.060159 [debug] [Thread-3  ]: Timing info for model.fhv_trips_dbt.my_second_dbt_model (compile): 2023-02-18 05:08:00.054178 => 2023-02-18 05:08:00.059158
+[0m05:08:00.060159 [debug] [Thread-3  ]: Began executing node model.fhv_trips_dbt.my_second_dbt_model
+[0m05:08:00.086164 [debug] [Thread-3  ]: Writing runtime sql for node "model.fhv_trips_dbt.my_second_dbt_model"
+[0m05:08:00.088233 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m05:08:00.091162 [debug] [Thread-3  ]: On model.fhv_trips_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `glossy-attic-375106`.`dbt_hsingh`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m05:08:02.273223 [debug] [Thread-3  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:969fd7d5-1cf6-4951-b3ba-9f31878656e7&page=queryresults
+[0m05:08:02.276223 [debug] [Thread-3  ]: Timing info for model.fhv_trips_dbt.my_second_dbt_model (execute): 2023-02-18 05:08:00.061159 => 2023-02-18 05:08:02.276223
+[0m05:08:02.277506 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '97822e78-956a-4b49-ab38-7246b4dfcf06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89B14E80>]}
+[0m05:08:02.278346 [info ] [Thread-3  ]: 2 of 2 OK created sql view model dbt_hsingh.my_second_dbt_model ................ [[32mCREATE VIEW (0 processed)[0m in 2.23s]
+[0m05:08:02.279223 [debug] [Thread-3  ]: Finished running node model.fhv_trips_dbt.my_second_dbt_model
+[0m05:08:02.280223 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m05:08:02.281507 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:08:02.282225 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m05:08:02.282225 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m05:08:02.283225 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.my_first_dbt_model' was properly closed.
+[0m05:08:02.283640 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.my_second_dbt_model' was properly closed.
+[0m05:08:02.284225 [info ] [MainThread]: 
+[0m05:08:02.285224 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 9.53 seconds (9.53s).
+[0m05:08:02.286224 [debug] [MainThread]: Command end result
+[0m05:08:02.301226 [info ] [MainThread]: 
+[0m05:08:02.302222 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:08:02.303222 [info ] [MainThread]: 
+[0m05:08:02.303222 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m05:08:02.304228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B88C96FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A00490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A00BE0>]}
+[0m05:08:02.304228 [debug] [MainThread]: Flushing usage events
