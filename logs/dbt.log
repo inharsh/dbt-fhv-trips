@@ -132,3 +132,1301 @@ where id = 1;
 [0m05:08:02.303222 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 [0m05:08:02.304228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B88C96FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A00490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B89A00BE0>]}
 [0m05:08:02.304228 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 05:24:20.206519 | 61e015fb-921c-4515-92f2-2f9ce69091e5 ==============================
+[0m05:24:20.206519 [info ] [MainThread]: Running with dbt=1.4.1
+[0m05:24:20.208367 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m05:24:20.209306 [debug] [MainThread]: Tracking: tracking
+[0m05:24:20.225307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2208A7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2208BFDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2208BFAC0>]}
+[0m05:24:20.670579 [debug] [MainThread]: Executing "git --help"
+[0m05:24:20.698714 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:24:20.699787 [debug] [MainThread]: STDERR: "b''"
+[0m05:24:20.703707 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m05:24:20.704708 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:24:20.707706 [debug] [MainThread]: On debug: select 1 as id
+[0m05:24:23.222013 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:3ed83df6-f50c-46b4-8a9b-5230f8154fc1&page=queryresults
+[0m05:24:23.223890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2211E4670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2208A71C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2208A7FA0>]}
+[0m05:24:23.223890 [debug] [MainThread]: Flushing usage events
+[0m05:24:24.579898 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-18 09:30:24.439134 | 3a69c271-75aa-4add-99ff-e1077d7d265e ==============================
+[0m09:30:24.439134 [info ] [MainThread]: Running with dbt=1.4.1
+[0m09:30:24.439134 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['stg_fhv_tripdata'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m09:30:24.443847 [debug] [MainThread]: Tracking: tracking
+[0m09:30:24.454392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024909AB9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A6DEB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A6DEF10>]}
+[0m09:30:24.593050 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 2 files added, 0 files changed.
+[0m09:30:24.593050 [debug] [MainThread]: Partial parsing: added file: fhv_trips_dbt://models\staging\stg_fhv_tripdata.sql
+[0m09:30:24.593050 [debug] [MainThread]: Partial parsing: added file: fhv_trips_dbt://models\staging\schema.yml
+[0m09:30:24.593050 [debug] [MainThread]: Partial parsing: deleted file: fhv_trips_dbt://models\example\my_second_dbt_model.sql
+[0m09:30:24.593050 [debug] [MainThread]: Partial parsing: deleted file: fhv_trips_dbt://models\example\my_first_dbt_model.sql
+[0m09:30:24.608678 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m09:30:24.639929 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m09:30:24.662075 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m09:30:24.667555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a69c271-75aa-4add-99ff-e1077d7d265e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9200D0>]}
+[0m09:30:24.684452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a69c271-75aa-4add-99ff-e1077d7d265e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A8C6F40>]}
+[0m09:30:24.684452 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m09:30:24.693392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a69c271-75aa-4add-99ff-e1077d7d265e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A8C6E80>]}
+[0m09:30:24.693392 [info ] [MainThread]: 
+[0m09:30:24.693392 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:30:24.693392 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m09:30:24.693392 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:30:26.150484 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m09:30:26.150484 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:30:27.491622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a69c271-75aa-4add-99ff-e1077d7d265e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A872310>]}
+[0m09:30:27.491622 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:30:27.491622 [info ] [MainThread]: 
+[0m09:30:27.496532 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:30:27.496532 [info ] [Thread-1  ]: 1 of 1 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m09:30:27.505643 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m09:30:27.505643 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:30:27.505643 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:30:27.513911 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 09:30:27.505643 => 2023-02-18 09:30:27.513911
+[0m09:30:27.513911 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:30:27.558408 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:30:27.566443 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m09:30:27.566443 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+with tripdata as
+(
+    select *, row_number() over(partition by pickup_datetime) as rn
+    from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+)
+
+select
+
+    cast(dispatching_base_num as string) dispatch_no,
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    cast(SR_Flag as integer) sr_flag,
+    cast(Affiliated_base_number as string) affiliated_no
+
+from tripdata
+where rn = 1
+
+
+
+  limit 100
+
+;
+
+
+[0m09:30:29.976103 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:1b1eb026-16d6-47eb-9178-084a5e8425d9&page=queryresults
+[0m09:30:30.022848 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 09:30:27.513911 => 2023-02-18 09:30:30.022848
+[0m09:30:30.022848 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a69c271-75aa-4add-99ff-e1077d7d265e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A8ACD30>]}
+[0m09:30:30.022848 [info ] [Thread-1  ]: 1 of 1 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.52s]
+[0m09:30:30.022848 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:30:30.030854 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:30:30.030854 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:30:30.030854 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m09:30:30.030854 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m09:30:30.030854 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.stg_fhv_tripdata' was properly closed.
+[0m09:30:30.038857 [info ] [MainThread]: 
+[0m09:30:30.038857 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.35 seconds (5.35s).
+[0m09:30:30.038857 [debug] [MainThread]: Command end result
+[0m09:30:30.062450 [info ] [MainThread]: 
+[0m09:30:30.073853 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:30:30.073853 [info ] [MainThread]: 
+[0m09:30:30.076372 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:30:30.076372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9DD190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9DD6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002490A9DD070>]}
+[0m09:30:30.076372 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 09:35:54.275780 | c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0 ==============================
+[0m09:35:54.275780 [info ] [MainThread]: Running with dbt=1.4.1
+[0m09:35:54.275780 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'vars': 'is_test_run: false', 'select': ['stg_fhv_tripdata'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m09:35:54.275780 [debug] [MainThread]: Tracking: tracking
+[0m09:35:54.299780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17EC32E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17EC49790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17F88BA30>]}
+[0m09:35:54.331786 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m09:35:54.331786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17EC56F70>]}
+[0m09:35:55.294154 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m09:35:55.318154 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m09:35:55.404798 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m09:35:55.412802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17F8E40D0>]}
+[0m09:35:55.428800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17EC562E0>]}
+[0m09:35:55.428800 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m09:35:55.428800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17FA3BDF0>]}
+[0m09:35:55.428800 [info ] [MainThread]: 
+[0m09:35:55.436797 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:35:55.436797 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m09:35:55.436797 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:35:57.344314 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m09:35:57.344314 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:35:58.570137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17FA2D370>]}
+[0m09:35:58.570137 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:35:58.570137 [info ] [MainThread]: 
+[0m09:35:58.578140 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:35:58.578140 [info ] [Thread-1  ]: 1 of 1 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m09:35:58.578140 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m09:35:58.578140 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:35:58.586141 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:35:58.594141 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 09:35:58.586141 => 2023-02-18 09:35:58.594141
+[0m09:35:58.594141 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:35:58.642173 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:35:58.642173 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m09:35:58.650144 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+with tripdata as
+(
+    select *, row_number() over(partition by pickup_datetime) as rn
+    from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+)
+
+select
+
+    cast(dispatching_base_num as string) dispatch_no,
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    cast(SR_Flag as integer) sr_flag,
+    cast(Affiliated_base_number as string) affiliated_no
+
+from tripdata
+where rn = 1
+
+;
+
+
+[0m09:36:00.955409 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:43d7943b-e5fc-4a90-85f9-bae591af15d7&page=queryresults
+[0m09:36:00.987401 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 09:35:58.594141 => 2023-02-18 09:36:00.987401
+[0m09:36:00.987401 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c33b11dd-b1f5-4fd7-832b-c585cd5ba5c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17FB408B0>]}
+[0m09:36:00.987401 [info ] [Thread-1  ]: 1 of 1 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.41s]
+[0m09:36:00.995402 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:36:00.995402 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:36:00.995402 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:36:00.995402 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m09:36:00.995402 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m09:36:00.995402 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.stg_fhv_tripdata' was properly closed.
+[0m09:36:00.995402 [info ] [MainThread]: 
+[0m09:36:00.995402 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 5.57 seconds (5.57s).
+[0m09:36:00.995402 [debug] [MainThread]: Command end result
+[0m09:36:01.011407 [info ] [MainThread]: 
+[0m09:36:01.051408 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:36:01.059409 [info ] [MainThread]: 
+[0m09:36:01.059409 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:36:01.059409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17FA438B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17FA2DA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B17F8E40A0>]}
+[0m09:36:01.059409 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 09:54:39.914309 | 25539312-dacf-4b3f-b348-d7fc0c49b5d9 ==============================
+[0m09:54:39.914309 [info ] [MainThread]: Running with dbt=1.4.1
+[0m09:54:39.914309 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['stg_fhv_tripdata'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m09:54:39.914309 [debug] [MainThread]: Tracking: tracking
+[0m09:54:39.930299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226E96FBA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226E97595B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226E97593A0>]}
+[0m09:54:39.970333 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m09:54:39.970333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA36AFD0>]}
+[0m09:54:41.017409 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m09:54:41.033408 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m09:54:41.097411 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m09:54:41.105416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA50C0D0>]}
+[0m09:54:41.121411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226E7430C40>]}
+[0m09:54:41.121411 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m09:54:41.121411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA54FAF0>]}
+[0m09:54:41.121411 [info ] [MainThread]: 
+[0m09:54:41.129410 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:54:41.129410 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m09:54:41.129410 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:54:42.513629 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m09:54:42.513629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:54:43.562063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA4F86A0>]}
+[0m09:54:43.562063 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:54:43.562063 [info ] [MainThread]: 
+[0m09:54:43.574205 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:54:43.579857 [info ] [Thread-1  ]: 1 of 1 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m09:54:43.579857 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m09:54:43.579857 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:54:43.588190 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:54:43.588190 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 09:54:43.579857 => 2023-02-18 09:54:43.588190
+[0m09:54:43.588190 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:54:43.651887 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m09:54:43.659884 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m09:54:43.659884 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+-- with tripdata as
+-- (
+--     select *, row_number() over(partition by pickup_datetime) as rn
+--     from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+-- )
+
+select
+-- identifiers
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as integer) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m09:54:46.045044 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:77fc0daa-0aca-4e8f-a5d1-5d67cf3d1421&page=queryresults
+[0m09:54:46.075954 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 09:54:43.595886 => 2023-02-18 09:54:46.075954
+[0m09:54:46.075954 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '25539312-dacf-4b3f-b348-d7fc0c49b5d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA640940>]}
+[0m09:54:46.075954 [info ] [Thread-1  ]: 1 of 1 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.50s]
+[0m09:54:46.088143 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m09:54:46.088143 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:54:46.088143 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:54:46.088143 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m09:54:46.088143 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m09:54:46.088143 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.stg_fhv_tripdata' was properly closed.
+[0m09:54:46.088143 [info ] [MainThread]: 
+[0m09:54:46.088143 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.97 seconds (4.97s).
+[0m09:54:46.088143 [debug] [MainThread]: Command end result
+[0m09:54:46.104146 [info ] [MainThread]: 
+[0m09:54:46.104146 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:54:46.104146 [info ] [MainThread]: 
+[0m09:54:46.104146 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:54:46.112145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA53CEB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA500E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226EA5008E0>]}
+[0m09:54:46.112145 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:04:37.632563 | 8c940efe-5464-4a1c-8cb8-5c24313ff62f ==============================
+[0m14:04:37.632563 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:04:37.652036 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m14:04:37.652036 [debug] [MainThread]: Tracking: tracking
+[0m14:04:37.668056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE47208100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE472080A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE47208CD0>]}
+[0m14:04:37.668056 [debug] [MainThread]: Set downloads directory='C:\Users\Harshit\AppData\Local\Temp\dbt-downloads-kx6fpklg'
+[0m14:04:37.668056 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:04:38.237786 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:04:38.237786 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m14:04:38.485793 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m14:04:38.549787 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m14:04:40.306035 [info ] [MainThread]:   Installed from version 1.0.0
+[0m14:04:40.306035 [info ] [MainThread]:   Up to date!
+[0m14:04:40.319399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '8c940efe-5464-4a1c-8cb8-5c24313ff62f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE471FEBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE471FE040>]}
+[0m14:04:40.319399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE4726E130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE471FEC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AE471FE100>]}
+[0m14:04:40.319399 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:20:06.815567 | ef938434-236c-4d8b-af28-1f9bf5c9d6ac ==============================
+[0m14:20:06.815567 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:20:06.815567 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'full_refresh': True, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m14:20:06.815567 [debug] [MainThread]: Tracking: tracking
+[0m14:20:06.831534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C816BB8BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81DB0D940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81DB0D4F0>]}
+[0m14:20:06.894078 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m14:20:06.894078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81DE0EF10>]}
+[0m14:20:08.621957 [debug] [MainThread]: 1699: static parser successfully parsed core\dim_zones.sql
+[0m14:20:08.637976 [debug] [MainThread]: 1699: static parser successfully parsed core\fact_fhv_trips.sql
+[0m14:20:08.637976 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m14:20:08.678012 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m14:20:08.773996 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:20:08.781977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E04F0D0>]}
+[0m14:20:08.805570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81DFF39A0>]}
+[0m14:20:08.810081 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:20:08.810081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E07D130>]}
+[0m14:20:08.810081 [info ] [MainThread]: 
+[0m14:20:08.810081 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:20:08.818106 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:20:08.818106 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:20:10.180099 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:20:10.180099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:20:11.255243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E0A8160>]}
+[0m14:20:11.255243 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:20:11.262937 [info ] [MainThread]: 
+[0m14:20:11.270989 [debug] [Thread-1  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:20:11.270989 [info ] [Thread-1  ]: 1 of 1 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:20:11.278937 [debug] [Thread-1  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:20:11.278937 [debug] [Thread-1  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:20:11.278937 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:20:11.278937 => 2023-02-18 14:20:11.278937
+[0m14:20:11.278937 [debug] [Thread-1  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:20:11.326937 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:20:21.001999 [debug] [Thread-1  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:20:22.725684 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:ad84340e-8623-4668-ac94-7bb03c26e4cb&page=queryresults
+[0m14:20:22.740098 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:20:22.769469 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:20:11.278937 => 2023-02-18 14:20:22.769469
+[0m14:20:22.769469 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ef938434-236c-4d8b-af28-1f9bf5c9d6ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E222B80>]}
+[0m14:20:22.769469 [info ] [Thread-1  ]: 1 of 1 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mCREATE 265[0m in 11.49s]
+[0m14:20:22.769469 [debug] [Thread-1  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:20:22.777440 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:20:22.777440 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:20:22.777440 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:20:22.777440 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:20:22.777440 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:20:22.777440 [info ] [MainThread]: 
+[0m14:20:22.777440 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 13.97 seconds (13.97s).
+[0m14:20:22.777440 [debug] [MainThread]: Command end result
+[0m14:20:22.809470 [info ] [MainThread]: 
+[0m14:20:22.809470 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:20:22.809470 [info ] [MainThread]: 
+[0m14:20:22.817439 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:20:22.817439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E13F610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E13FF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C81E13F940>]}
+[0m14:20:22.817439 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:25:44.764089 | fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d ==============================
+[0m14:25:44.764089 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:25:44.764089 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'full_refresh': True, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m14:25:44.764089 [debug] [MainThread]: Tracking: tracking
+[0m14:25:44.788056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACA26A700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACA26AB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACA26A790>]}
+[0m14:25:44.836261 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:25:44.836261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACAEB73A0>]}
+[0m14:25:46.272514 [debug] [MainThread]: 1699: static parser successfully parsed core\dim_zones.sql
+[0m14:25:46.288512 [debug] [MainThread]: 1699: static parser successfully parsed core\fact_fhv_trips.sql
+[0m14:25:46.296536 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m14:25:46.328547 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m14:25:46.432513 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:25:46.440532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB0A70D0>]}
+[0m14:25:46.456521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB0A3B20>]}
+[0m14:25:46.456521 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:25:46.456521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB0A0A60>]}
+[0m14:25:46.456521 [info ] [MainThread]: 
+[0m14:25:46.456521 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:25:46.464518 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:25:46.464518 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:47.691707 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:25:47.691707 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:25:48.694841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB09E6D0>]}
+[0m14:25:48.694841 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:25:48.694841 [info ] [MainThread]: 
+[0m14:25:48.702842 [debug] [Thread-1  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:25:48.702842 [info ] [Thread-1  ]: 1 of 1 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:25:48.710843 [debug] [Thread-1  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:25:48.710843 [debug] [Thread-1  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:25:48.710843 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:25:48.710843 => 2023-02-18 14:25:48.710843
+[0m14:25:48.710843 [debug] [Thread-1  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:25:48.758846 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:25:57.706433 [debug] [Thread-1  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:25:59.425895 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:ee7b0191-e7e1-425b-91fe-d90859ba6c6c&page=queryresults
+[0m14:25:59.442459 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:25:59.475379 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:25:48.710843 => 2023-02-18 14:25:59.475379
+[0m14:25:59.475379 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fe8ccaab-92b3-44b9-a235-3c8f15ba0b5d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB29F7C0>]}
+[0m14:25:59.475379 [info ] [Thread-1  ]: 1 of 1 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mCREATE 265[0m in 10.77s]
+[0m14:25:59.486102 [debug] [Thread-1  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:25:59.486102 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:25:59.486102 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:25:59.486102 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:25:59.486102 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:25:59.486102 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:25:59.486102 [info ] [MainThread]: 
+[0m14:25:59.494106 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 13.03 seconds (13.03s).
+[0m14:25:59.495223 [debug] [MainThread]: Command end result
+[0m14:25:59.511228 [info ] [MainThread]: 
+[0m14:25:59.511228 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:25:59.511228 [info ] [MainThread]: 
+[0m14:25:59.511228 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:25:59.511228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB0A6A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB1B5CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017ACB06B340>]}
+[0m14:25:59.511228 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:28:30.704948 | 68aa1cc1-02de-454c-8e85-08a67bcf04d8 ==============================
+[0m14:28:30.704948 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:28:30.705916 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m14:28:30.708212 [debug] [MainThread]: Tracking: tracking
+[0m14:28:30.724817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025782228B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025782228220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257822287C0>]}
+[0m14:28:30.772816 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m14:28:30.772816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257FF1A1DC0>]}
+[0m14:28:32.141174 [debug] [MainThread]: 1699: static parser successfully parsed core\dim_zones.sql
+[0m14:28:32.157891 [debug] [MainThread]: 1699: static parser successfully parsed core\fact_fhv_trips.sql
+[0m14:28:32.158043 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m14:28:32.181539 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m14:28:32.281556 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:28:32.292635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002578241A0D0>]}
+[0m14:28:32.308639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002578247C5B0>]}
+[0m14:28:32.308639 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:28:32.308639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257824A78B0>]}
+[0m14:28:32.308639 [info ] [MainThread]: 
+[0m14:28:32.316638 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:28:32.316638 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:28:32.316638 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:28:33.560926 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:28:33.560926 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:28:34.679274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002578247CFD0>]}
+[0m14:28:34.679274 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:28:34.679274 [info ] [MainThread]: 
+[0m14:28:34.691711 [debug] [Thread-1  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:28:34.700359 [info ] [Thread-1  ]: 1 of 1 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:28:34.702374 [debug] [Thread-1  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:28:34.702374 [debug] [Thread-1  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:28:34.702374 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:28:34.702374 => 2023-02-18 14:28:34.702374
+[0m14:28:34.702374 [debug] [Thread-1  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:28:34.774394 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:28:44.298339 [debug] [Thread-1  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:28:45.811626 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:3ca2b3ee-845a-48a2-b70c-30b7bb182c54&page=queryresults
+[0m14:28:45.827281 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:28:45.843280 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:28:34.702374 => 2023-02-18 14:28:45.843280
+[0m14:28:45.851279 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68aa1cc1-02de-454c-8e85-08a67bcf04d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025782620970>]}
+[0m14:28:45.851279 [info ] [Thread-1  ]: 1 of 1 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mINSERT 265[0m in 11.15s]
+[0m14:28:45.851279 [debug] [Thread-1  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:28:45.851279 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:28:45.859301 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:28:45.859301 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:28:45.859301 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:28:45.859301 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:28:45.859301 [info ] [MainThread]: 
+[0m14:28:45.859301 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 13.54 seconds (13.54s).
+[0m14:28:45.859301 [debug] [MainThread]: Command end result
+[0m14:28:45.875282 [info ] [MainThread]: 
+[0m14:28:45.883281 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:28:45.883281 [info ] [MainThread]: 
+[0m14:28:45.883281 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:28:45.883281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025782417040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025782534D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257823A1A30>]}
+[0m14:28:45.883281 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:30:03.855371 | d8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28 ==============================
+[0m14:30:03.855371 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:30:03.855371 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'full_refresh': True, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+[0m14:30:03.855371 [debug] [MainThread]: Tracking: tracking
+[0m14:30:03.876216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7AC2BA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7AC899D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7AC89310>]}
+[0m14:30:04.052225 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:30:04.052225 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:30:04.052225 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:30:04.068226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7BAAEEE0>]}
+[0m14:30:04.076246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7B921D30>]}
+[0m14:30:04.076246 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:30:04.076246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7AC2BA00>]}
+[0m14:30:04.084227 [info ] [MainThread]: 
+[0m14:30:04.084227 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:30:04.084227 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:30:04.084227 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:05.384980 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:30:05.392981 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:30:06.540319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7BA98D60>]}
+[0m14:30:06.540319 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:30:06.548324 [info ] [MainThread]: 
+[0m14:30:06.548324 [debug] [Thread-1  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:30:06.556319 [info ] [Thread-1  ]: 1 of 1 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:30:06.556319 [debug] [Thread-1  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:30:06.556319 [debug] [Thread-1  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:30:06.556319 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:30:06.556319 => 2023-02-18 14:30:06.556319
+[0m14:30:06.556319 [debug] [Thread-1  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:30:06.612352 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:30:15.529758 [debug] [Thread-1  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:30:17.188879 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:28fc0e39-c26c-431d-941c-e1de2ad4c7b7&page=queryresults
+[0m14:30:17.196575 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:30:17.228572 [debug] [Thread-1  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:30:06.556319 => 2023-02-18 14:30:17.228572
+[0m14:30:17.228572 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd8d08c3d-0c6d-4f3f-9007-d74f8a7a9c28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7BAD9940>]}
+[0m14:30:17.228572 [info ] [Thread-1  ]: 1 of 1 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mCREATE 265[0m in 10.67s]
+[0m14:30:17.236571 [debug] [Thread-1  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:30:17.236571 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:30:17.236571 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:30:17.236571 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:30:17.236571 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:30:17.236571 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:30:17.236571 [info ] [MainThread]: 
+[0m14:30:17.244535 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 13.15 seconds (13.15s).
+[0m14:30:17.244535 [debug] [MainThread]: Command end result
+[0m14:30:17.260558 [info ] [MainThread]: 
+[0m14:30:17.260558 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:30:17.260558 [info ] [MainThread]: 
+[0m14:30:17.260558 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:30:17.260558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A78971CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7BA98580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A7BA98DC0>]}
+[0m14:30:17.260558 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:39:34.605968 | e03ec09e-3ecd-4ab9-b076-822aff025101 ==============================
+[0m14:39:34.605968 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:39:34.613969 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'select': ['+fact_fhv_trips'], 'which': 'build', 'rpc_method': 'build'}
+[0m14:39:34.613969 [debug] [MainThread]: Tracking: tracking
+[0m14:39:34.632140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F6B5BA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F6BB9310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F6BB90A0>]}
+[0m14:39:34.800899 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:39:34.808903 [debug] [MainThread]: Partial parsing: updated file: fhv_trips_dbt://models\core\dim_zones.sql
+[0m14:39:34.824935 [debug] [MainThread]: 1699: static parser successfully parsed core\dim_zones.sql
+[0m14:39:34.856936 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:39:34.864936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F7A240D0>]}
+[0m14:39:34.872901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F79F2220>]}
+[0m14:39:34.880903 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:39:34.880903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F797C4C0>]}
+[0m14:39:34.880903 [info ] [MainThread]: 
+[0m14:39:34.880903 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:39:34.888899 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:39:34.888899 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:39:36.290681 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:39:36.290681 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:39:37.244215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F79D0190>]}
+[0m14:39:37.244215 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:39:37.252253 [info ] [MainThread]: 
+[0m14:39:37.260251 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:39:37.260251 [debug] [Thread-2  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:39:37.260251 [info ] [Thread-1  ]: 1 of 4 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m14:39:37.260251 [info ] [Thread-2  ]: 2 of 4 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:39:37.260251 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m14:39:37.260251 [debug] [Thread-2  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:39:37.260251 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:39:37.260251 [debug] [Thread-2  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:39:37.292248 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m14:39:37.300245 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:39:37.300245 => 2023-02-18 14:39:37.300245
+[0m14:39:37.300245 [debug] [Thread-2  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:39:37.324246 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 14:39:37.260251 => 2023-02-18 14:39:37.324246
+[0m14:39:37.324246 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:39:37.372251 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m14:39:37.380242 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:39:37.388248 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m14:39:37.388248 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+select
+-- identifiers
+    
+    
+to_hex(md5(cast(coalesce(cast(dispatching_base_num as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(pickup_datetime as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as tripid,
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as integer) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m14:39:39.605288 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:0d9977da-539d-488f-b2f2-7dee66c9a753&page=queryresults
+[0m14:39:39.637340 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 14:39:37.332264 => 2023-02-18 14:39:39.637340
+[0m14:39:39.637340 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F7A92CA0>]}
+[0m14:39:39.637340 [info ] [Thread-1  ]: 1 of 4 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.38s]
+[0m14:39:39.645305 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:39:47.079554 [debug] [Thread-2  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:39:48.820703 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:71967894-5c6d-4bcd-b7e6-fb8940ce2b24&page=queryresults
+[0m14:39:48.828705 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:39:48.836704 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:39:37.300245 => 2023-02-18 14:39:48.836704
+[0m14:39:48.836704 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F7A92F70>]}
+[0m14:39:48.836704 [info ] [Thread-2  ]: 2 of 4 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mINSERT 265[0m in 11.58s]
+[0m14:39:48.836704 [debug] [Thread-2  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:39:48.844709 [debug] [Thread-4  ]: Began running node model.fhv_trips_dbt.dim_zones
+[0m14:39:48.844709 [info ] [Thread-4  ]: 3 of 4 START sql table model dbt_hsingh.dim_zones .............................. [RUN]
+[0m14:39:48.844709 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.dim_zones'
+[0m14:39:48.844709 [debug] [Thread-4  ]: Began compiling node model.fhv_trips_dbt.dim_zones
+[0m14:39:48.852703 [debug] [Thread-4  ]: Writing injected SQL for node "model.fhv_trips_dbt.dim_zones"
+[0m14:39:48.852703 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (compile): 2023-02-18 14:39:48.844709 => 2023-02-18 14:39:48.852703
+[0m14:39:48.852703 [debug] [Thread-4  ]: Began executing node model.fhv_trips_dbt.dim_zones
+[0m14:39:48.892704 [debug] [Thread-4  ]: Writing runtime sql for node "model.fhv_trips_dbt.dim_zones"
+[0m14:39:48.900707 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m14:39:48.900707 [debug] [Thread-4  ]: On model.fhv_trips_dbt.dim_zones: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.dim_zones"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select 
+    locationid, 
+    borough, 
+    zone, 
+    replace(service_zone,'Boro','Green') as service_zone
+from `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup`
+    );
+  
+[0m14:39:52.859833 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:04dc8741-9ad9-4a69-9371-b975795b2bf5&page=queryresults
+[0m14:39:52.859833 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (execute): 2023-02-18 14:39:48.852703 => 2023-02-18 14:39:52.859833
+[0m14:39:52.859833 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F2C47490>]}
+[0m14:39:52.859833 [info ] [Thread-4  ]: 3 of 4 OK created sql table model dbt_hsingh.dim_zones ......................... [[32mCREATE TABLE (265.0 rows, 12.1 KB processed)[0m in 4.02s]
+[0m14:39:52.867444 [debug] [Thread-4  ]: Finished running node model.fhv_trips_dbt.dim_zones
+[0m14:39:52.867444 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:39:52.867444 [info ] [Thread-1  ]: 4 of 4 START sql table model dbt_hsingh.fact_fhv_trips ......................... [RUN]
+[0m14:39:52.867444 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.fact_fhv_trips'
+[0m14:39:52.867444 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:39:52.883428 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m14:39:52.883428 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (compile): 2023-02-18 14:39:52.867444 => 2023-02-18 14:39:52.883428
+[0m14:39:52.883428 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:39:52.891427 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m14:39:52.891427 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:39:52.899435 [debug] [Thread-1  ]: On model.fhv_trips_dbt.fact_fhv_trips: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.fact_fhv_trips"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`fact_fhv_trips`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with dim_zones as (
+    select * from `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    where borough != 'Unknown'
+)
+
+select
+    dispatch_no,
+    pickup_locationid,
+    dropoff_locationid,
+    affiliated_no,
+    sr_flag,
+    pickup_datetime,
+    dropoff_datetime
+
+from `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata` as stg_fhv
+
+inner join dim_zones as pickup_zone
+    on stg_fhv.pickup_locationid = pickup_zone.locationid
+inner join dim_zones as dropoff_zone
+    on stg_fhv.dropoff_locationid = dropoff_zone.locationid
+    );
+  
+[0m14:39:55.501742 [debug] [Thread-1  ]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Bad int64 value: 1.0')
+[0m14:39:57.318101 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:dd3a6c5c-7df3-4ba5-953e-ea3876207046&page=queryresults
+[0m14:39:57.318101 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (execute): 2023-02-18 14:39:52.883428 => 2023-02-18 14:39:57.318101
+[0m14:39:57.342084 [debug] [Thread-1  ]: Database Error in model fact_fhv_trips (models\core\fact_fhv_trips.sql)
+  Bad int64 value: 1.0
+  compiled Code at target\run\fhv_trips_dbt\models\core\fact_fhv_trips.sql
+[0m14:39:57.342084 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e03ec09e-3ecd-4ab9-b076-822aff025101', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F8BA7F70>]}
+[0m14:39:57.342084 [error] [Thread-1  ]: 4 of 4 ERROR creating sql table model dbt_hsingh.fact_fhv_trips ................ [[31mERROR[0m in 4.47s]
+[0m14:39:57.350103 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:39:57.350103 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:39:57.350103 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:39:57.350103 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:39:57.350103 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:39:57.358086 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.fact_fhv_trips' was properly closed.
+[0m14:39:57.358086 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:39:57.358086 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.dim_zones' was properly closed.
+[0m14:39:57.358086 [info ] [MainThread]: 
+[0m14:39:57.358086 [info ] [MainThread]: Finished running 1 view model, 1 seed, 2 table models in 0 hours 0 minutes and 22.48 seconds (22.48s).
+[0m14:39:57.358086 [debug] [MainThread]: Command end result
+[0m14:39:57.374088 [info ] [MainThread]: 
+[0m14:39:57.382093 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m14:39:57.382093 [info ] [MainThread]: 
+[0m14:39:57.382093 [error] [MainThread]: [33mDatabase Error in model fact_fhv_trips (models\core\fact_fhv_trips.sql)[0m
+[0m14:39:57.382093 [error] [MainThread]:   Bad int64 value: 1.0
+[0m14:39:57.382093 [error] [MainThread]:   compiled Code at target\run\fhv_trips_dbt\models\core\fact_fhv_trips.sql
+[0m14:39:57.382093 [info ] [MainThread]: 
+[0m14:39:57.382093 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m14:39:57.382093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F79C52B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F79F2160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3F8B87F40>]}
+[0m14:39:57.390106 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 14:55:44.293198 | e42820dd-e1ae-4db9-a672-d87b1ad81899 ==============================
+[0m14:55:44.293198 [info ] [MainThread]: Running with dbt=1.4.1
+[0m14:55:44.293198 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'select': ['+fact_fhv_trips'], 'which': 'build', 'rpc_method': 'build'}
+[0m14:55:44.293198 [debug] [MainThread]: Tracking: tracking
+[0m14:55:44.308669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BDEE6EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BDEE65B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BDEE6670>]}
+[0m14:55:44.482951 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:55:44.498605 [debug] [MainThread]: Partial parsing: updated file: fhv_trips_dbt://models\staging\stg_fhv_tripdata.sql
+[0m14:55:44.517435 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m14:55:44.557471 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m14:55:44.565471 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m14:55:44.581441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECF1EE0>]}
+[0m14:55:44.589439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECAD8E0>]}
+[0m14:55:44.597439 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 446 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m14:55:44.597439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B78C8910>]}
+[0m14:55:44.597439 [info ] [MainThread]: 
+[0m14:55:44.597439 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:55:44.605437 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m14:55:44.605437 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:45.802100 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m14:55:45.802100 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:46.925853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECCDEE0>]}
+[0m14:55:46.925853 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m14:55:46.933893 [info ] [MainThread]: 
+[0m14:55:46.941895 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:55:46.941895 [debug] [Thread-2  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:55:46.941895 [info ] [Thread-1  ]: 1 of 4 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m14:55:46.941895 [info ] [Thread-2  ]: 2 of 4 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m14:55:46.949897 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m14:55:46.949897 [debug] [Thread-2  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m14:55:46.949897 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:55:46.949897 [debug] [Thread-2  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:55:46.957897 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m14:55:46.957897 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 14:55:46.957897 => 2023-02-18 14:55:46.957897
+[0m14:55:46.965913 [debug] [Thread-2  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:55:46.981929 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 14:55:46.949897 => 2023-02-18 14:55:46.981929
+[0m14:55:46.989899 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:55:47.042011 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m14:55:47.042011 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m14:55:47.054101 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m14:55:47.054101 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+select
+-- identifiers
+    
+    
+to_hex(md5(cast(coalesce(cast(dispatching_base_num as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(pickup_datetime as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as tripid,
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as numeric) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m14:55:49.474757 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:3356f693-3d4f-4b77-9efc-b5e89791241a&page=queryresults
+[0m14:55:49.523963 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 14:55:46.997928 => 2023-02-18 14:55:49.523963
+[0m14:55:49.523963 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BEDBD0A0>]}
+[0m14:55:49.523963 [info ] [Thread-1  ]: 1 of 4 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.58s]
+[0m14:55:49.530585 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m14:55:55.431382 [debug] [Thread-2  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m14:55:56.919729 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:0fbbd134-25b4-4800-9af9-9d773083b64a&page=queryresults
+[0m14:55:56.919729 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m14:55:56.935230 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 14:55:46.965913 => 2023-02-18 14:55:56.935230
+[0m14:55:56.937323 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BEE0C310>]}
+[0m14:55:56.937323 [info ] [Thread-2  ]: 2 of 4 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mINSERT 265[0m in 9.99s]
+[0m14:55:56.937323 [debug] [Thread-2  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m14:55:56.937323 [debug] [Thread-4  ]: Began running node model.fhv_trips_dbt.dim_zones
+[0m14:55:56.937323 [info ] [Thread-4  ]: 3 of 4 START sql table model dbt_hsingh.dim_zones .............................. [RUN]
+[0m14:55:56.937323 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.dim_zones'
+[0m14:55:56.937323 [debug] [Thread-4  ]: Began compiling node model.fhv_trips_dbt.dim_zones
+[0m14:55:56.946464 [debug] [Thread-4  ]: Writing injected SQL for node "model.fhv_trips_dbt.dim_zones"
+[0m14:55:56.954473 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (compile): 2023-02-18 14:55:56.945326 => 2023-02-18 14:55:56.954473
+[0m14:55:56.954473 [debug] [Thread-4  ]: Began executing node model.fhv_trips_dbt.dim_zones
+[0m14:55:56.970479 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m14:55:57.978435 [debug] [Thread-4  ]: Writing runtime sql for node "model.fhv_trips_dbt.dim_zones"
+[0m14:55:57.978435 [debug] [Thread-4  ]: On model.fhv_trips_dbt.dim_zones: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.dim_zones"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select 
+    locationid, 
+    borough, 
+    zone, 
+    replace(service_zone,'Boro','Green') as service_zone
+from `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup`
+    );
+  
+[0m14:56:01.092483 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:4b00be5c-44a9-426b-b4e0-3147af748985&page=queryresults
+[0m14:56:01.108876 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (execute): 2023-02-18 14:55:56.954473 => 2023-02-18 14:56:01.108876
+[0m14:56:01.108876 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BFEAAD30>]}
+[0m14:56:01.108876 [info ] [Thread-4  ]: 3 of 4 OK created sql table model dbt_hsingh.dim_zones ......................... [[32mCREATE TABLE (265.0 rows, 12.1 KB processed)[0m in 4.17s]
+[0m14:56:01.108876 [debug] [Thread-4  ]: Finished running node model.fhv_trips_dbt.dim_zones
+[0m14:56:01.114540 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:56:01.114540 [info ] [Thread-1  ]: 4 of 4 START sql table model dbt_hsingh.fact_fhv_trips ......................... [RUN]
+[0m14:56:01.114540 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.fact_fhv_trips'
+[0m14:56:01.114540 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:56:01.123361 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m14:56:01.123474 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (compile): 2023-02-18 14:56:01.114540 => 2023-02-18 14:56:01.123474
+[0m14:56:01.123474 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:56:01.131476 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m14:56:01.131476 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:56:01.131476 [debug] [Thread-1  ]: On model.fhv_trips_dbt.fact_fhv_trips: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.fact_fhv_trips"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`fact_fhv_trips`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with dim_zones as (
+    select * from `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    where borough != 'Unknown'
+)
+
+select
+    dispatch_no,
+    pickup_locationid,
+    dropoff_locationid,
+    affiliated_no,
+    sr_flag,
+    pickup_datetime,
+    dropoff_datetime
+
+from `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata` as stg_fhv
+
+inner join dim_zones as pickup_zone
+    on stg_fhv.pickup_locationid = pickup_zone.locationid
+inner join dim_zones as dropoff_zone
+    on stg_fhv.dropoff_locationid = dropoff_zone.locationid
+    );
+  
+[0m14:56:11.535657 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:a1b46bb9-93ad-4e1c-be3d-68bc710d1bc5&page=queryresults
+[0m14:56:11.535657 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (execute): 2023-02-18 14:56:01.123474 => 2023-02-18 14:56:11.535657
+[0m14:56:11.535657 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e42820dd-e1ae-4db9-a672-d87b1ad81899', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BEE1C460>]}
+[0m14:56:11.535657 [info ] [Thread-1  ]: 4 of 4 OK created sql table model dbt_hsingh.fact_fhv_trips .................... [[32mCREATE TABLE (25.6m rows, 2.6 GB processed)[0m in 10.42s]
+[0m14:56:11.543657 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.fact_fhv_trips
+[0m14:56:11.543657 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.fact_fhv_trips' was properly closed.
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m14:56:11.543657 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.dim_zones' was properly closed.
+[0m14:56:11.543657 [info ] [MainThread]: 
+[0m14:56:11.543657 [info ] [MainThread]: Finished running 1 view model, 1 seed, 2 table models in 0 hours 0 minutes and 26.95 seconds (26.95s).
+[0m14:56:11.551653 [debug] [MainThread]: Command end result
+[0m14:56:11.567653 [info ] [MainThread]: 
+[0m14:56:11.567653 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:56:11.567653 [info ] [MainThread]: 
+[0m14:56:11.567653 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m14:56:11.567653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECAD9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECF1CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8BECF1B80>]}
+[0m14:56:11.567653 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 15:32:36.290709 | 303cf779-af00-458a-b1ac-54a56093fa53 ==============================
+[0m15:32:36.290709 [info ] [MainThread]: Running with dbt=1.4.1
+[0m15:32:36.296804 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['stg_fhv_tripdata'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:32:36.296804 [debug] [MainThread]: Tracking: tracking
+[0m15:32:36.310315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEE4062E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEE406CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEE406160>]}
+[0m15:32:36.449683 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m15:32:36.450508 [debug] [MainThread]: Partial parsing: added file: fhv_trips_dbt://macros\get_month.sql
+[0m15:32:36.451508 [debug] [MainThread]: Partial parsing: updated file: fhv_trips_dbt://models\staging\stg_fhv_tripdata.sql
+[0m15:32:36.452509 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m15:32:36.484826 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m15:32:36.500600 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m15:32:36.508689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '303cf779-af00-458a-b1ac-54a56093fa53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF2210D0>]}
+[0m15:32:36.519691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '303cf779-af00-458a-b1ac-54a56093fa53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEE4225B0>]}
+[0m15:32:36.520691 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 447 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m15:32:36.521841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '303cf779-af00-458a-b1ac-54a56093fa53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEE4222E0>]}
+[0m15:32:36.523687 [info ] [MainThread]: 
+[0m15:32:36.526779 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:32:36.528690 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m15:32:36.528690 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:37.622199 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m15:32:37.623197 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:38.562593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '303cf779-af00-458a-b1ac-54a56093fa53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF02EB50>]}
+[0m15:32:38.563588 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:32:38.563588 [info ] [MainThread]: 
+[0m15:32:38.570588 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:32:38.571589 [info ] [Thread-1  ]: 1 of 1 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m15:32:38.572590 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m15:32:38.573002 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:32:38.579524 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:32:38.580524 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 15:32:38.573002 => 2023-02-18 15:32:38.580524
+[0m15:32:38.580524 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:32:38.617602 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:32:38.618525 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m15:32:38.621525 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+select
+-- identifiers
+    
+    
+to_hex(md5(cast(coalesce(cast(dispatching_base_num as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(pickup_datetime as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as tripid,
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as numeric) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+    extract(month from pickup_datetime) in_month,
+    case in_month
+        when 1 then 'January'
+        when 2 then 'February'
+        when 3 then 'March'
+        when 4 then 'April'
+        when 5 then 'May'
+        when 6 then 'June'
+        when 7 then 'July'
+        when 8 then 'August'
+        when 9 then 'September'
+        when 10 then 'October'
+        when 11 then 'November'
+        when 12 then 'December'
+    end as month   
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m15:32:40.715240 [debug] [Thread-1  ]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: in_month at [23:10]')
+[0m15:32:42.498352 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:f5a20681-e3f4-46ad-93ea-c356ffb3e730&page=queryresults
+[0m15:32:42.501515 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 15:32:38.581525 => 2023-02-18 15:32:42.501515
+[0m15:32:42.510993 [debug] [Thread-1  ]: Database Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)
+  Unrecognized name: in_month at [23:10]
+  compiled Code at target\run\fhv_trips_dbt\models\staging\stg_fhv_tripdata.sql
+[0m15:32:42.512070 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '303cf779-af00-458a-b1ac-54a56093fa53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF2A4D00>]}
+[0m15:32:42.512993 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model dbt_hsingh.stg_fhv_tripdata ............... [[31mERROR[0m in 3.94s]
+[0m15:32:42.515993 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:32:42.517992 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:32:42.518993 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:32:42.518993 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m15:32:42.519993 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m15:32:42.519993 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.stg_fhv_tripdata' was properly closed.
+[0m15:32:42.519993 [info ] [MainThread]: 
+[0m15:32:42.520995 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.00 seconds (6.00s).
+[0m15:32:42.521993 [debug] [MainThread]: Command end result
+[0m15:32:42.535994 [info ] [MainThread]: 
+[0m15:32:42.536993 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:32:42.538148 [info ] [MainThread]: 
+[0m15:32:42.538148 [error] [MainThread]: [33mDatabase Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)[0m
+[0m15:32:42.538995 [error] [MainThread]:   Unrecognized name: in_month at [23:10]
+[0m15:32:42.538995 [error] [MainThread]:   compiled Code at target\run\fhv_trips_dbt\models\staging\stg_fhv_tripdata.sql
+[0m15:32:42.539993 [info ] [MainThread]: 
+[0m15:32:42.540995 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:32:42.541993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF371F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF35E550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026DEF221E50>]}
+[0m15:32:42.543725 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 15:33:11.104252 | d30880dc-faa4-41aa-916f-29f920e88245 ==============================
+[0m15:33:11.104252 [info ] [MainThread]: Running with dbt=1.4.1
+[0m15:33:11.119339 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['stg_fhv_tripdata'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:33:11.119969 [debug] [MainThread]: Tracking: tracking
+[0m15:33:11.133335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B819220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B819B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B819940>]}
+[0m15:33:11.253860 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:33:11.253860 [debug] [MainThread]: Partial parsing: updated file: fhv_trips_dbt://models\staging\stg_fhv_tripdata.sql
+[0m15:33:11.271188 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m15:33:11.308822 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m15:33:11.315983 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m15:33:11.321820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd30880dc-faa4-41aa-916f-29f920e88245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B9FA0D0>]}
+[0m15:33:11.329637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd30880dc-faa4-41aa-916f-29f920e88245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B9ACA60>]}
+[0m15:33:11.330617 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 447 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m15:33:11.331615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd30880dc-faa4-41aa-916f-29f920e88245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B9AC9A0>]}
+[0m15:33:11.333240 [info ] [MainThread]: 
+[0m15:33:11.334618 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:33:11.336848 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m15:33:11.337734 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:33:12.354425 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m15:33:12.355426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:33:13.345013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd30880dc-faa4-41aa-916f-29f920e88245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4B92B160>]}
+[0m15:33:13.346015 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:33:13.346376 [info ] [MainThread]: 
+[0m15:33:13.353167 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:33:13.354626 [info ] [Thread-1  ]: 1 of 1 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m15:33:13.357431 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m15:33:13.357431 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:33:13.366357 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:33:13.367698 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 15:33:13.358359 => 2023-02-18 15:33:13.367698
+[0m15:33:13.368359 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:33:13.410269 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:33:13.412271 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m15:33:13.413271 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+select
+-- identifiers
+    
+    
+to_hex(md5(cast(coalesce(cast(dispatching_base_num as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(pickup_datetime as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as tripid,
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as numeric) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+    extract(month from pickup_datetime) as in_month,
+    case in_month
+        when 1 then 'January'
+        when 2 then 'February'
+        when 3 then 'March'
+        when 4 then 'April'
+        when 5 then 'May'
+        when 6 then 'June'
+        when 7 then 'July'
+        when 8 then 'August'
+        when 9 then 'September'
+        when 10 then 'October'
+        when 11 then 'November'
+        when 12 then 'December'
+    end as month   
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m15:33:15.642605 [debug] [Thread-1  ]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: in_month at [23:10]')
+[0m15:33:17.322700 [error] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:8fafccee-e215-4a5f-9331-18aa182ec78e&page=queryresults
+[0m15:33:17.324382 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 15:33:13.368359 => 2023-02-18 15:33:17.324192
+[0m15:33:17.332604 [debug] [Thread-1  ]: Database Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)
+  Unrecognized name: in_month at [23:10]
+  compiled Code at target\run\fhv_trips_dbt\models\staging\stg_fhv_tripdata.sql
+[0m15:33:17.333700 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd30880dc-faa4-41aa-916f-29f920e88245', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4BB332B0>]}
+[0m15:33:17.334605 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model dbt_hsingh.stg_fhv_tripdata ............... [[31mERROR[0m in 3.98s]
+[0m15:33:17.337605 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:33:17.339603 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:33:17.340605 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:33:17.340605 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m15:33:17.340605 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m15:33:17.341831 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.stg_fhv_tripdata' was properly closed.
+[0m15:33:17.341831 [info ] [MainThread]: 
+[0m15:33:17.342603 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.01 seconds (6.01s).
+[0m15:33:17.343604 [debug] [MainThread]: Command end result
+[0m15:33:17.355606 [info ] [MainThread]: 
+[0m15:33:17.356604 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:33:17.357603 [info ] [MainThread]: 
+[0m15:33:17.357603 [error] [MainThread]: [33mDatabase Error in model stg_fhv_tripdata (models\staging\stg_fhv_tripdata.sql)[0m
+[0m15:33:17.358603 [error] [MainThread]:   Unrecognized name: in_month at [23:10]
+[0m15:33:17.359606 [error] [MainThread]:   compiled Code at target\run\fhv_trips_dbt\models\staging\stg_fhv_tripdata.sql
+[0m15:33:17.359606 [info ] [MainThread]: 
+[0m15:33:17.360603 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:33:17.361606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4BB40A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4BB33310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B4BB33370>]}
+[0m15:33:17.362605 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-18 15:35:06.330098 | 3c32a94b-588c-45b6-ac9c-bbd874b73a18 ==============================
+[0m15:35:06.330098 [info ] [MainThread]: Running with dbt=1.4.1
+[0m15:35:06.336797 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Harshit\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'select': ['+fact_fhv_trips'], 'full_refresh': True, 'which': 'build', 'rpc_method': 'build'}
+[0m15:35:06.337792 [debug] [MainThread]: Tracking: tracking
+[0m15:35:06.353928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B2DF9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B2DF9A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B2DF9790>]}
+[0m15:35:06.480440 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:35:06.480440 [debug] [MainThread]: Partial parsing: updated file: fhv_trips_dbt://models\staging\stg_fhv_tripdata.sql
+[0m15:35:06.496969 [debug] [MainThread]: 1603: static parser failed on staging\stg_fhv_tripdata.sql
+[0m15:35:06.513705 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging\stg_fhv_tripdata.sql
+[0m15:35:06.532328 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fhv_trips_dbt.example
+[0m15:35:06.539634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B3C37EB0>]}
+[0m15:35:06.552006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B2E09940>]}
+[0m15:35:06.552633 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 447 macros, 0 operations, 1 seed file, 1 source, 0 exposures, 0 metrics
+[0m15:35:06.553638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B3BCE610>]}
+[0m15:35:06.554636 [info ] [MainThread]: 
+[0m15:35:06.556633 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:35:06.559634 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106'
+[0m15:35:06.559634 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:35:07.524214 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_glossy-attic-375106_dbt_hsingh'
+[0m15:35:07.524214 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:35:08.526072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B3BF2CD0>]}
+[0m15:35:08.526448 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:35:08.527449 [info ] [MainThread]: 
+[0m15:35:08.533452 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:35:08.533452 [debug] [Thread-2  ]: Began running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m15:35:08.534448 [info ] [Thread-1  ]: 1 of 4 START sql view model dbt_hsingh.stg_fhv_tripdata ........................ [RUN]
+[0m15:35:08.535448 [info ] [Thread-2  ]: 2 of 4 START seed file dbt_hsingh.taxi_zone_lookup ............................. [RUN]
+[0m15:35:08.536449 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.stg_fhv_tripdata'
+[0m15:35:08.537447 [debug] [Thread-2  ]: Acquiring new bigquery connection 'seed.fhv_trips_dbt.taxi_zone_lookup'
+[0m15:35:08.537447 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:35:08.538448 [debug] [Thread-2  ]: Began compiling node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m15:35:08.544448 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:35:08.545091 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (compile): 2023-02-18 15:35:08.545091 => 2023-02-18 15:35:08.545091
+[0m15:35:08.546448 [debug] [Thread-2  ]: Began executing node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m15:35:08.554583 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (compile): 2023-02-18 15:35:08.538448 => 2023-02-18 15:35:08.554583
+[0m15:35:08.569449 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:35:08.605496 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.stg_fhv_tripdata"
+[0m15:35:08.606503 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m15:35:08.615640 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m15:35:08.617642 [debug] [Thread-1  ]: On model.fhv_trips_dbt.stg_fhv_tripdata: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.stg_fhv_tripdata"} */
+
+
+  create or replace view `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata`
+  OPTIONS()
+  as 
+
+select
+-- identifiers
+    
+    
+to_hex(md5(cast(coalesce(cast(dispatching_base_num as STRING), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(pickup_datetime as STRING), '_dbt_utils_surrogate_key_null_') as STRING))) as tripid,
+    dispatching_base_num as  dispatch_no,
+    cast(PULocationID as integer) pickup_locationid,
+    cast(DOLocationID as integer) dropoff_locationid,
+    Affiliated_base_number as  affiliated_no,
+    cast(SR_Flag as numeric) sr_flag,
+
+-- timestamps
+    cast(pickup_datetime as timestamp) pickup_datetime,
+    cast(dropoff_datetime as timestamp) dropoff_datetime,
+
+from `glossy-attic-375106`.`dbt_test`.`fhv_tripdata`
+
+;
+
+
+[0m15:35:10.718562 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:551a03ad-c974-49a7-886f-0008e16ff6d2&page=queryresults
+[0m15:35:10.737487 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.stg_fhv_tripdata (execute): 2023-02-18 15:35:08.570450 => 2023-02-18 15:35:10.737487
+[0m15:35:10.738384 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B3D7AC70>]}
+[0m15:35:10.739492 [info ] [Thread-1  ]: 1 of 4 OK created sql view model dbt_hsingh.stg_fhv_tripdata ................... [[32mCREATE VIEW (0 processed)[0m in 2.20s]
+[0m15:35:10.741771 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.stg_fhv_tripdata
+[0m15:35:16.394405 [debug] [Thread-2  ]: On seed.fhv_trips_dbt.taxi_zone_lookup: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "seed.fhv_trips_dbt.taxi_zone_lookup"} */
+
+    alter table `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup` set OPTIONS()
+  
+[0m15:35:17.855735 [debug] [Thread-2  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:01bb41e7-fe53-43c3-8695-aa6f5f08ab7d&page=queryresults
+[0m15:35:17.863272 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.fhv_trips_dbt.taxi_zone_lookup"
+[0m15:35:17.871111 [debug] [Thread-2  ]: Timing info for seed.fhv_trips_dbt.taxi_zone_lookup (execute): 2023-02-18 15:35:08.546448 => 2023-02-18 15:35:17.871111
+[0m15:35:17.872217 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B4DC0C70>]}
+[0m15:35:17.873112 [info ] [Thread-2  ]: 2 of 4 OK loaded seed file dbt_hsingh.taxi_zone_lookup ......................... [[32mCREATE 265[0m in 9.34s]
+[0m15:35:17.874122 [debug] [Thread-2  ]: Finished running node seed.fhv_trips_dbt.taxi_zone_lookup
+[0m15:35:17.875113 [debug] [Thread-4  ]: Began running node model.fhv_trips_dbt.dim_zones
+[0m15:35:17.876112 [info ] [Thread-4  ]: 3 of 4 START sql table model dbt_hsingh.dim_zones .............................. [RUN]
+[0m15:35:17.877111 [debug] [Thread-4  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.dim_zones'
+[0m15:35:17.877111 [debug] [Thread-4  ]: Began compiling node model.fhv_trips_dbt.dim_zones
+[0m15:35:17.881112 [debug] [Thread-4  ]: Writing injected SQL for node "model.fhv_trips_dbt.dim_zones"
+[0m15:35:17.883114 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (compile): 2023-02-18 15:35:17.877111 => 2023-02-18 15:35:17.882113
+[0m15:35:17.883114 [debug] [Thread-4  ]: Began executing node model.fhv_trips_dbt.dim_zones
+[0m15:35:17.898467 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m15:35:18.936099 [debug] [Thread-4  ]: Writing runtime sql for node "model.fhv_trips_dbt.dim_zones"
+[0m15:35:18.938100 [debug] [Thread-4  ]: On model.fhv_trips_dbt.dim_zones: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.dim_zones"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select 
+    locationid, 
+    borough, 
+    zone, 
+    replace(service_zone,'Boro','Green') as service_zone
+from `glossy-attic-375106`.`dbt_hsingh`.`taxi_zone_lookup`
+    );
+  
+[0m15:35:21.988155 [debug] [Thread-4  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:3ef28989-67d6-45f4-a48d-d6c2d49a0127&page=queryresults
+[0m15:35:21.989976 [debug] [Thread-4  ]: Timing info for model.fhv_trips_dbt.dim_zones (execute): 2023-02-18 15:35:17.884112 => 2023-02-18 15:35:21.989976
+[0m15:35:21.991087 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B4DFEA60>]}
+[0m15:35:21.992088 [info ] [Thread-4  ]: 3 of 4 OK created sql table model dbt_hsingh.dim_zones ......................... [[32mCREATE TABLE (265.0 rows, 12.1 KB processed)[0m in 4.11s]
+[0m15:35:21.993086 [debug] [Thread-4  ]: Finished running node model.fhv_trips_dbt.dim_zones
+[0m15:35:21.994085 [debug] [Thread-1  ]: Began running node model.fhv_trips_dbt.fact_fhv_trips
+[0m15:35:21.994085 [info ] [Thread-1  ]: 4 of 4 START sql table model dbt_hsingh.fact_fhv_trips ......................... [RUN]
+[0m15:35:21.996088 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.fhv_trips_dbt.fact_fhv_trips'
+[0m15:35:21.996088 [debug] [Thread-1  ]: Began compiling node model.fhv_trips_dbt.fact_fhv_trips
+[0m15:35:22.002090 [debug] [Thread-1  ]: Writing injected SQL for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m15:35:22.004090 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (compile): 2023-02-18 15:35:21.997087 => 2023-02-18 15:35:22.004090
+[0m15:35:22.005086 [debug] [Thread-1  ]: Began executing node model.fhv_trips_dbt.fact_fhv_trips
+[0m15:35:22.008087 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:35:23.020633 [debug] [Thread-1  ]: Writing runtime sql for node "model.fhv_trips_dbt.fact_fhv_trips"
+[0m15:35:23.022231 [debug] [Thread-1  ]: On model.fhv_trips_dbt.fact_fhv_trips: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "gcp", "target_name": "dev", "node_id": "model.fhv_trips_dbt.fact_fhv_trips"} */
+
+  
+    
+
+    create or replace table `glossy-attic-375106`.`dbt_hsingh`.`fact_fhv_trips`
+    
+    
+    OPTIONS()
+    as (
+      
+
+with dim_zones as (
+    select * from `glossy-attic-375106`.`dbt_hsingh`.`dim_zones`
+    where borough != 'Unknown'
+)
+
+select
+    dispatch_no,
+    pickup_locationid,
+    dropoff_locationid,
+    affiliated_no,
+    sr_flag,
+    pickup_datetime,
+    dropoff_datetime
+
+from `glossy-attic-375106`.`dbt_hsingh`.`stg_fhv_tripdata` as stg_fhv
+
+inner join dim_zones as pickup_zone
+    on stg_fhv.pickup_locationid = pickup_zone.locationid
+inner join dim_zones as dropoff_zone
+    on stg_fhv.dropoff_locationid = dropoff_zone.locationid
+    );
+  
+[0m15:35:32.655821 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glossy-attic-375106&j=bq:US:3e959034-804f-402c-90e7-35681c907cc2&page=queryresults
+[0m15:35:32.658297 [debug] [Thread-1  ]: Timing info for model.fhv_trips_dbt.fact_fhv_trips (execute): 2023-02-18 15:35:22.005086 => 2023-02-18 15:35:32.658297
+[0m15:35:32.659634 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3c32a94b-588c-45b6-ac9c-bbd874b73a18', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B4DCA190>]}
+[0m15:35:32.660639 [info ] [Thread-1  ]: 4 of 4 OK created sql table model dbt_hsingh.fact_fhv_trips .................... [[32mCREATE TABLE (25.6m rows, 2.6 GB processed)[0m in 10.66s]
+[0m15:35:32.661592 [debug] [Thread-1  ]: Finished running node model.fhv_trips_dbt.fact_fhv_trips
+[0m15:35:32.663696 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:35:32.664785 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:35:32.664785 [debug] [MainThread]: Connection 'list_glossy-attic-375106' was properly closed.
+[0m15:35:32.666004 [debug] [MainThread]: Connection 'list_glossy-attic-375106_dbt_hsingh' was properly closed.
+[0m15:35:32.666298 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.fact_fhv_trips' was properly closed.
+[0m15:35:32.666298 [debug] [MainThread]: Connection 'seed.fhv_trips_dbt.taxi_zone_lookup' was properly closed.
+[0m15:35:32.667300 [debug] [MainThread]: Connection 'model.fhv_trips_dbt.dim_zones' was properly closed.
+[0m15:35:32.667300 [info ] [MainThread]: 
+[0m15:35:32.668640 [info ] [MainThread]: Finished running 1 view model, 1 seed, 2 table models in 0 hours 0 minutes and 26.11 seconds (26.11s).
+[0m15:35:32.670965 [debug] [MainThread]: Command end result
+[0m15:35:32.683032 [info ] [MainThread]: 
+[0m15:35:32.684030 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:35:32.685820 [info ] [MainThread]: 
+[0m15:35:32.688785 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m15:35:32.690236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B2E09250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B4DFE3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E5B3C234F0>]}
+[0m15:35:32.691289 [debug] [MainThread]: Flushing usage events
